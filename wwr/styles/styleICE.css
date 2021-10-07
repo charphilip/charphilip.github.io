@@ -1,0 +1,51 @@
+body{
+    background-color: pink;
+}
+section{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    font-size: 25px;
+}
+ol {
+    list-style:none;
+    counter-reset: li;
+    padding-left:35%;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+li:before {
+    content: counter(li); color: black;
+    display: inline-block; width: 1em;
+    margin-left: -1em
+}
+li {
+    counter-increment: li
+}
+.hover:hover{
+    color: black; 
+    text-align: center;
+}
+.quote{
+    color: white;
+    font-size: 35px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+footer{
+    color: black;
+    padding-left: 40%;
+    padding-right: 40%;
+    text-align: center;
+    
+}
