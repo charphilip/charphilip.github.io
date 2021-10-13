@@ -1,0 +1,9 @@
+body{
+    background-color: gray;
+    background-image: url("https://github.com/charphilip/charphilip.github.io/blob/main/wwr/images/w05_ice_image_desk.jpg?raw=true");
+}
+.section_bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
