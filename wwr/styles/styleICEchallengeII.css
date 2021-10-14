@@ -1,9 +1,45 @@
 body{
     background-color: gray;
-    background-image: url("https://github.com/charphilip/charphilip.github.io/blob/main/wwr/images/w05_ice_image_desk.jpg?raw=true");
+    
 }
-.section_bottom{
+.principal_section{
+    background-image: url("https://i.pinimg.com/originals/b0/5c/70/b05c707df3a17b17da9d02025b0d6f47.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 80%;
+    padding-right: 90px;
+    padding-bottom: 1%;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+.principal_section h1{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    text-align: right;
+    font-size: 50px;
+    padding-top: 180px;
+    color: rgb(73, 21, 5);
+}
+.principal_section p{
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(41, 12, 3);
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
     gap: 20px;
+    text-align: center;
+    padding-left: 50px;
+}
+.section_bottom img{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    border-radius: 150px;
+    margin: auto;
+    border: 20px solid rgba(18, 22, 27, 0.267);
+    
 }
