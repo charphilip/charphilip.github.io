@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Stick+No+Bills&display=swap');
 body {
     background-color: #177e89; 
+    font-family: "Stick No Bills", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color:#db3a34;
@@ -15,6 +20,7 @@ nav{
     text-align: center;
     color: #084c61;
     text-decoration: none;
+    font-family: "Comic Neue", Helvetica, sans-serif;
 } 
 a{
     text-align: center;
@@ -23,13 +29,17 @@ a{
 }
 #hero-msg{
     text-align: center;
+    font-family: "Comic Neue", Helvetica, sans-serif;
+
 } 
 h1{
     text-align: center;
+    font-family: "Stick No Bills", Helvetica, sans-serif; 
 } 
 h4{
     text-align: center;
     color: #db3a34;
+    font-family: "Stick No Bills", Helvetica, sans-serif; 
 }
 .button-box{
     text-align: center;
@@ -41,8 +51,17 @@ section{
     font-size: 40px;
     text-align: center;
 }
+main section img{
+    box-sizing: border-box;
+}
 #background {
     height: 725px;
+}
+#logo_link {
+    padding-top: 5px;
+}
+nav a {
+    padding: 35px;
 }
 nav a.hover{
     background-color: #db3a34;
@@ -53,14 +72,25 @@ nav a.hover{
 }
 .home-title{
     color: #db3a34;
+    font-family: "Stick No Bills", Helvetica, sans-serif;  
+    font-size: 2em;  
+    margin-top: 10px;
 }
 .book{
     color: #db3a34;;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join{
     color: #db3a34;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover{
     background-color: #ffc833;
@@ -71,19 +101,37 @@ nav a.hover{
 .msg{
     background-color: #084c61;
     color: #db3a34;
+    font-family: "Comic Neue", Helvetica, sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
+    padding: 35px;
 }
-p{
+.msg p{
     color: #db3a34;
+    font-family: "Comic Neue", Helvetica, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #084c61;
 }
 h2{
-    color: #db3a34
+    color: #db3a34;
+    font-family: "Stick No Bills", Helvetica, sans-serif;
+    margin: 0;
 }
 footer{
     background-color: #084c61;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer h3{
     color: #db3a34;
-    text-decoration: underline;
+    text-decoration: none;
+    font-family: "Stick No Bills", Helvetica, sans-serif;
 }
 footer a{
     color: #db3a34;
@@ -91,13 +139,17 @@ footer a{
 }
 footer a:hover{
     color: #ffc833;
-    text-decoration: none;
+    text-decoration: underline;
+}
+footer .social img{
+    padding-top: 15px;
 }
 .logo{
     width: 80px;
 }
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img{
     width: 100%;
