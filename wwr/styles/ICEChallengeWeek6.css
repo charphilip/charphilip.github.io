@@ -27,6 +27,13 @@ img{
     width: 350px;
     height: 100%;
 }
+.x{
+    color: grey;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: right;
+    padding-left: 80%;
+}
 .principaltext{
     grid-column: 2/-1;
     text-align: center;
