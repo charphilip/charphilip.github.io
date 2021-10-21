@@ -1,5 +1,5 @@
 body{
-    background-color: mediumaquamarine;
+    background-color: white;
 }
 body, h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -63,12 +63,13 @@ a{
 .button {
     background-color: rgb(231, 183, 93);
     color: white;
-    text-decoration: underline;
     font-size: 20px;
     padding: 20px 40px;
     margin: auto;
     border-radius: 5px;
     text-align: center;
     grid-column: 2/-1;
+    font-weight: bold;
+    text-decoration: none;
 
 }
