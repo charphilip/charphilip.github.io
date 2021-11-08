@@ -107,24 +107,27 @@ nav a.hover{
 .home-title{
     color: #db3a34;
     font-family: "Stick No Bills", Helvetica, sans-serif;  
-    font-size: 2em;  
+    font-size: 3em;  
     margin-top: 10px;
 }
 .book{
     /* color: #db3a34; */
     color:white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: bold;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
-    border-color: white;
+    /* border-color: white; */
     border-style: groove;
+    background-color: #177e89;
 }
 .join{
     color: #db3a34;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: bold;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
@@ -138,7 +141,7 @@ nav a.hover{
 .msg{
     background-color: #177e89;
     font-family: "Comic Neue", Helvetica, sans-serif;
-    font-size: .8em;
+    font-size: 1em;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
@@ -206,7 +209,7 @@ footer a{
 }
 footer a:hover{
     color: #ffc833;
-    text-decoration: underline;
+    text-decoration: none;
 }
 footer .social img{
     padding-top: 15px;
