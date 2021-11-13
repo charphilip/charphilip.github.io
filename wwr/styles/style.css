@@ -349,4 +349,17 @@ footer .social img{
     footer {
         margin-top: 25px;
     }
+    .blog-header{
+        display: block;
+        
+    }
+    .blog-header img{
+        width: 80%;
+    }
+    .past-season{
+        display: block;
+    }
+    .wild{
+        display: block;
+    }
 }
