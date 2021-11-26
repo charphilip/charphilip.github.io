@@ -21,7 +21,9 @@ header {
     font-size: 40px;
     justify-self: center;
     align-self: center;
+    
 }
+
 #form{
     position: relative;
     transform: translate(-50%, -50%);
@@ -96,6 +98,7 @@ main{
 main div iframe{
     width: 550px;
     height: 350px;
+    border-radius: 10%;
 }
 body .images-home{
     display: grid;
@@ -140,6 +143,7 @@ body .images-home{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
 #presentation-images2{
     position: relative;
     width: 80%;
@@ -206,6 +210,28 @@ main i{
     align-self:center;
     padding-top: 250px;
 }
+.columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+    padding: 20px;
+    
+    gap: 20px;
+    overflow: hidden;
+}
+.columns div{
+    border: 2px solid white;
+	box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
+    padding: 20px;
+    text-align: center;
+}
+.columns div i{
+    color: #3D1F00;
+    text-shadow: 2px 2px 4px gray;
+    font-size: 40px;
+    justify-self: center;
+    align-self: center;
+}
 footer{
     background-image: linear-gradient(180deg, #A43312 25%, #AABD8C 80%);
     padding: 25px 50px;
@@ -215,6 +241,7 @@ footer{
     align-items: center; */
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 350px 1fr;
+    
 }
 footer a{
     grid-row: 1/-1;
@@ -227,10 +254,19 @@ footer a .logo{
 footer div a img{
     width: 70px;
     height: 70px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+footer div a img:hover{
+    opacity: 0.7;
 }
 .social{
     justify-self: center;
     align-self:center;
+    padding: 20px;
+    
 }
 footer h3{
     text-align: center;
