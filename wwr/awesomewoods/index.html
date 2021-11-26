@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Home Page - Awesome Woods</title>
     <script src="https://kit.fontawesome.com/ee9b9659c8.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -13,14 +15,14 @@
             <i class="fas fa-user-circle"></i>
             <i class="fas fa-map-marker-alt"></i>
             <i class="fas fa-envelope"></i>
-            <form id="form">
-                <input type="search" id="query" name="q" placeholder="Search...">
-                <button><i class="fas fa-search"></i></button>
-            </form>
         </div>
         <a href="./index.html" id="logo">
             <img class="logo" src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/Logo.png?raw=true" alt="Awesome Woods Logo">
-        </a>            
+        </a>  
+        <form id="form">
+            <input type="search" id="query" name="q" placeholder="Search in Awesome Woods...">
+            <button><i class="fas fa-search"></i></button>
+        </form>          
         <nav>
                 <a href='index.html'>HOME</a>
                 <a href='./register-contact.html'>REGISTER – CONTACT US</a>
@@ -28,32 +30,55 @@
                 <a href='./site-plan.html'>SITE PLAN</a>
         </nav>
     </header>
-    <div id="presentation-images">
-        <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image1.jpg?raw=true" alt="image for homepage">
-        <p>Why do you need to visit this site? VISION - MISION
-            “Awesome woods” is a company where ideas come to life. The company has modern tools to help the customers to create awesome artwork in wood. The only condition is the imagination, the rest is our job. Commonly, people want to make a difference, but they do not know-how. 
-            The secret is the decor, it is amazing how the decoration can convert a house into another one. With that in mind, the first thing to do is to come to this web page. The site will provide ideas, pictures, tips, testimonies, and a guide to start in the decoration world. 
-            Each content in this site has the purpose to expand the customers’ vision and to recognize until what point we can provide solutions to their requests. </p>
-        <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image2.jpg?raw=true" alt="image for homepage">    
-        <p>The visitors will come to this website because the information provided by it will be organized and friendly with any customer. It will be easy to understand and there will be shortcuts from each page. 
-            Additionally, the design will be striking for the great images of our artworks making the customer excited. Another reason the customers need to come to this site is the clear information the company will provide, explaining each process with text and videos (the videos will show testimonies and final designs). 
-            What does the site contain? CONTENT
-            Also, the customers could find how to transform their ideas to reality with step-by-step guide included on the site, the place where the offices are, the social media profiles, the forms to get contact with the company, and the phone numbers to call the company for assistance.</p>
-    </div>
+    <section class="images-home">
+        <div id="presentation-images">
+            <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image1.jpg?raw=true" alt="image for homepage">
+            <div class="text">
+                <p class="para">Why do you need to visit this site? VISION - MISION
+                “Awesome woods” is a company where ideas come to life. The company has modern tools to help the customers to create awesome artwork in wood. The only condition is the imagination, the rest is our job. Commonly, people want to make a difference, but they do not know-how. 
+                The secret is the decor, it is amazing how the decoration can convert a house into another one. With that in mind, the first thing to do is to come to this web page. The site will provide ideas, pictures, tips, testimonies, and a guide to start in the decoration world. 
+                Each content in this site has the purpose to expand the customers’ vision and to recognize until what point we can provide solutions to their requests. </p>
+            </div>
+        </div>
+        <div id="presentation-images2">
+            <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image2.jpg?raw=true" alt="image for homepage">    
+            <div class="text2">
+            <p class="para2">The visitors will come to this website because the information provided by it will be organized and friendly with any customer. It will be easy to understand and there will be shortcuts from each page. 
+                Additionally, the design will be striking for the great images of our artworks making the customer excited. Another reason the customers need to come to this site is the clear information the company will provide, explaining each process with text and videos (the videos will show testimonies and final designs). 
+                What does the site contain? CONTENT
+                Also, the customers could find how to transform their ideas to reality with step-by-step guide included on the site, the place where the offices are, the social media profiles, the forms to get contact with the company, and the phone numbers to call the company for assistance.</p>
+            </div>
+        </div>
+    </section>
     <main>
         <div class="location">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.9973704240583!2d-111.78544368495159!3d43.81441395000978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sUniversidad%20Brigham%20Young%20-%20Idaho!5e0!3m2!1ses-419!2sus!4v1637463245977!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <p>
+        <section class="headquarters">
+            <h2>
+                Headquarters
+            </h2>
+            <p>
                 525 S Center St, Rexburg, ID 83460
                 Ubicado en: Auxiliary Services Building (ASB)
                 Abierto ahora:  11:00–23:00
-                byui.edu
-                Abrir el sitio web
                 (208) 496-1411
-                Llamar al número de teléfono
-                R678+QM Rexburg, Idaho
-        </p>
+                Call the phone number
+                Rexburg, Idaho
+            </p>
+        </section>
+        <section class="office">
+            <h2>
+                Idaho Falls - Office
+            </h2>
+            <p>
+                1000 Memorial Dr
+                Idaho Falls ID 83402-3410
+                Telephone
+                (1) 208-522-7669
+                United States
+            </p>
+        </section>
         <i class="fas fa-compass"></i>
     </main>
     <footer>
