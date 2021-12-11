@@ -376,6 +376,16 @@ footer h3{
     padding: 0;
     
 }
+.mainprocess{
+    display: grid;
+    /* grid-template-columns: 600px 600px; */
+    grid-template-rows: 80px 200px 1fr 1fr;
+    gap: 20px;
+    border: 20px;
+    margin: 0 30px;
+    overflow: hidden;
+    padding: 0;
+}
 /* CSS for LOGIN */
 #login {
     color: white;
@@ -559,7 +569,7 @@ footer h3{
   }
 
 /* CSS for In Touch */
-#intouch {
+#intouch, #feedback{
     color: white;
     background: #E7C24F;
     /* background:-webkit-linear-gradient(to right, #267871, #136a8a);
@@ -575,22 +585,25 @@ footer h3{
     grid-row: 2/3;
     z-index: 0;
 }
-#intouch-box{
+#feedback{
+    grid-row: 6/-1;
+}
+#intouch-box, #feedback-box {
     /* display: grid;
     grid-template-columns: 1fr; */
     align-items: center;
     justify-content: center;
 }
-#intouch-box i{
+#intouch-box i, #feedback-box i{
     text-align: center;
 }
-#intouch-box h1{
+#intouch-box h1, #feedback-box h1{
     text-align: center;
 }
-#intouch .form{
+#intouch .form, #feedback .form{
     text-align: center;
 }
-#intouch .form input[type=text].name {
+#intouch .form input[type=text].name, #feedback .form input[type=text].name {
     border: none;
     background: none;
     box-shadow: 0px 2px 0px 0px white;
@@ -600,10 +613,10 @@ footer h3{
     outline: none;
     text-decoration: none;
 }
-#intouch .form .name::placeholder {
+#intouch .form .name::placeholder, #feedback .form .name::placeholder {
     color: white;
  }
-#intouch .form input[type=email].mail {
+#intouch .form input[type=email].mail, #feedback .form input[type=email].mail {
     border: none;
     background: none;
     box-shadow: 0px 2px 0px 0px white;
@@ -615,10 +628,10 @@ footer h3{
     margin-top: 20px;
     text-decoration: none;
 }
-#intouch .form .mail::placeholder {
+#intouch .form .mail::placeholder, #feedback .form .mail::placeholder {
     color: white;
 }
-#intouch .form input[type=text].message {
+#intouch .form input[type=text].message, #feedback .form input[type=text].message {
     border: none;
     background: none;
     box-shadow: 0px 2px 0px 0px white;
@@ -630,7 +643,7 @@ footer h3{
     margin-top: 20px;
     text-decoration: none;
 }
-#intouch .form .message::placeholder {
+#intouch .form .message::placeholder, #feedback .form .message::placeholder {
     color: white;
 }
 #intouch .form .button {
@@ -676,6 +689,162 @@ footer h3{
     font-size: 40px;
     justify-self: center;
     align-self: center;
+}
+.information2{
+    border: 2px solid white;
+	box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
+    padding: 20px;
+    padding-left: 45%;
+    text-align: center;
+    grid-column: 1/-1;
+    grid-row: 6/-1;
+    height: 65%;
+    margin: auto 18px;
+    /* z-index: -1; */
+}
+.information2 h1{
+    margin: 18px auto;
+}
+.information2 div{
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 20% 50%;
+    justify-content: center;
+    align-content: center;
+}
+.information2 i{
+    color: #3D1F00;
+    text-shadow: 2px 2px 4px gray;
+    font-size: 40px;
+    justify-self: center;
+    align-self: center;
+}
+
+.paragraphpage3{
+    grid-row: 2/3;
+    margin: 0 40px;
+    overflow: hidden;
+    padding: 20px 50px;
+    text-align: center;
+    color: #E7C24F;
+}
+.content {
+    position: absolute; 
+    top: 85%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 160px;
+    overflow:hidden;
+    /* font-family: 'Lato', sans-serif; */
+    font-size: 35px;
+    line-height: 40px;
+    color: #E7C24F;
+}    
+.content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 20px;
+}
+.content__container:before {
+    content: '[';
+    left: 0;
+}
+.content__container:after {
+    content: ']';
+    position: absolute;
+    right: 0;
+}
+.content__container:after, .content__container:before {
+    position: absolute;
+    top: 0;
+    color: #AABD8C;
+    font-size: 42px;
+    line-height: 40px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+    .content__container__text {
+    display: inline;
+    float: left;
+    margin: 0;
+}
+.content__container__list {
+    margin-top: 0;
+    padding-left: 525px;
+    text-align: left;
+    list-style: none;
+    
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}    
+.content__container__list__item {
+    line-height:40px;
+    margin:0;
+}
+
+@-webkit-keyframes opacity {
+0%, 100% {opacity:0;}
+50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+33.32%,45.98% {transform:translate3d(0,-50%,0);}
+49.98%,62.64% {transform:translate3d(0,-75%,0);}
+66.64%,79.3% {transform:translate3d(0,-50%,0);}
+83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-o-keyframes opacity {
+0%, 100% {opacity:0;}
+50% {opacity:1;}
+}
+
+@-o-keyframes change {
+0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+33.32%,45.98% {transform:translate3d(0,-50%,0);}
+49.98%,62.64% {transform:translate3d(0,-75%,0);}
+66.64%,79.3% {transform:translate3d(0,-50%,0);}
+83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-moz-keyframes opacity {
+0%, 100% {opacity:0;}
+50% {opacity:1;}
+}
+
+@-moz-keyframes change {
+0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+33.32%,45.98% {transform:translate3d(0,-50%,0);}
+49.98%,62.64% {transform:translate3d(0,-75%,0);}
+66.64%,79.3% {transform:translate3d(0,-50%,0);}
+83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@keyframes opacity {
+0%, 100% {opacity:0;}
+50% {opacity:1;}
+}
+
+@keyframes change {
+0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+33.32%,45.98% {transform:translate3d(0,-50%,0);}
+49.98%,62.64% {transform:translate3d(0,-75%,0);}
+66.64%,79.3% {transform:translate3d(0,-50%,0);}
+83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
 /* @-webkit-keyframes fade {
     from {opacity: .4}
