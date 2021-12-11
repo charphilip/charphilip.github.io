@@ -104,7 +104,7 @@ main div iframe{
 }
 .images-home{
     grid-row: 3/4;
-    padding: 0 auto;
+    /* padding: 0 auto; */
     margin: 0 auto;
 }
 #templates{
@@ -123,6 +123,42 @@ main div iframe{
     /* grid-column: 1/2; */
 }
 #presentation-images img{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+#presentation-images2{
+    position: relative;
+    /* width: 80%;
+    padding-left: 80px; */
+    /* grid-column: 1/2; */
+}
+#presentation-images2 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+#presentation-images3{
+    position: relative;
+    /* width: 80%;
+    padding-left: 80px; */
+    /* grid-column: 1/2; */
+}
+#presentation-images3 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+#presentation-images4{
+    position: relative;
+    /* width: 80%;
+    padding-left: 80px; */
+    /* grid-column: 1/2; */
+}
+#presentation-images4 img{
     display: block;
     width: 100%;
     height: auto;
@@ -160,36 +196,39 @@ main div iframe{
     cursor: pointer;
 }
 
-#presentation-images2{
-    position: relative;
-        /* width: 80%;
-        padding-right: 80px; */
-    /* grid-column: 2/3; */
-}
-#presentation-images2 img{
-    display: block;
-    width: 100%;
-    height: auto;
-    
-}
-.text2{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0; 
-    transition: .5s ease;
-    background-color: #E7C24F;
-}
-#presentation-images2:hover .text2{
+
+#presentation-images2:hover .text{
     opacity: 1;
 }
-#presentation-images2 .para2{
+#presentation-images2 .para{
     color: white;
-    font-size: 15px;
+    font-size: 23px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%, -50%); */
+}
+#presentation-images3:hover .text{
+    opacity: 1;
+}
+#presentation-images3 .para{
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%, -50%); */
+}
+#presentation-images4:hover .text{
+    opacity: 1;
+}
+#presentation-images4 .para{
+    color: white;
+    font-size: 23px;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -588,9 +627,11 @@ footer h3{
     transition: 0.5s;
   }
 .feedbackgrid{
+    grid-row: 5/6;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 /* CSS for In Touch */
 #intouch, #feedback{
     color: white;
@@ -784,9 +825,9 @@ footer h3{
     color: #AABD8C;
     font-size: 42px;
     line-height: 40px;
-    -webkit-animation-name: opacity;
+    /* -webkit-animation-name: opacity;
     -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite; */
     animation-name: opacity;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -798,13 +839,13 @@ footer h3{
 }
 .content__container__list {
     margin-top: 0;
-    padding-left: 525px;
+    padding-left: 545px;
     text-align: left;
     list-style: none;
     
-    -webkit-animation-name: change;
+    /* -webkit-animation-name: change;
     -webkit-animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite; */
     animation-name: change;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -814,17 +855,17 @@ footer h3{
     margin:0;
 }
 
-@-webkit-keyframes opacity {
+/* @-webkit-keyframes opacity {
 0%, 100% {opacity:0;}
 50% {opacity:1;}
-}
+} */
 .owndesign{
-    padding: 0 auto;
+    /* padding: 0 auto; */
     margin: 0 50px;
     grid-row: 4/5;
 }
 .label{
-    padding: 0 auto;
+    /* padding: 0 auto; */
     margin: 15px auto;
 }
 label {
@@ -905,3 +946,8 @@ label {
     from {opacity: .4}
     to {opacity: 1}
 }
+canvas {  /* or some other selector */
+    width: 800px;
+    height: 500px;
+ }
+ /* width="800px" height="500px" */
