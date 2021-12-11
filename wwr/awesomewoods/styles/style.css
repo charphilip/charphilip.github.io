@@ -951,3 +951,6 @@ canvas {  /* or some other selector */
     height: 500px;
  }
  /* width="800px" height="500px" */
+ #myCanvas {
+    border: 3px dotted #000;    
+}
