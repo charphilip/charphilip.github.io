@@ -55,50 +55,63 @@
             or feedback on the site. It should be on a separate page.
         </p>
         <section class="images-home">
-            <div id="presentation-images">
-                <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image1.jpg?raw=true" alt="image for homepage">
-                <div class="text">
-                    <p class="para">Why do you need to visit this site? VISION - MISION
-                    “Awesome woods” is a company where ideas come to life. The company has modern tools to help the customers to create awesome artwork in wood. The only condition is the imagination, the rest is our job. Commonly, people want to make a difference, but they do not know-how. 
-                    The secret is the decor, it is amazing how the decoration can convert a house into another one. With that in mind, the first thing to do is to come to this web page. The site will provide ideas, pictures, tips, testimonies, and a guide to start in the decoration world. 
-                    Each content in this site has the purpose to expand the customers’ vision and to recognize until what point we can provide solutions to their requests. </p>
+            <h2 style="text-align: center; color: #E7C24F;">TEMPLATES</h2>
+            <div id="templates">
+                <div id="presentation-images">
+                    <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image1.jpg?raw=true" alt="image for homepage">
+                    <div class="text">
+                        <p class="para"><a class="template" href="#">Wood motif. Click to Use this Template</a><br></p>
+                    </div>
                 </div>
-            </div>
-            <div id="presentation-images2">
-                <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image2.jpg?raw=true" alt="image for homepage">    
-                <div class="text2">
-                <p class="para2">The visitors will come to this website because the information provided by it will be organized and friendly with any customer. It will be easy to understand and there will be shortcuts from each page. 
-                Additionally, the design will be striking for the great images of our artworks making the customer excited. Another reason the customers need to come to this site is the clear information the company will provide, explaining each process with text and videos (the videos will show testimonies and final designs). 
-                What does the site contain? CONTENT
-                Also, the customers could find how to transform their ideas to reality with step-by-step guide included on the site, the place where the offices are, the social media profiles, the forms to get contact with the company, and the phone numbers to call the company for assistance.</p>
+                <div id="presentation-images">
+                    <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image2.jpg?raw=true" alt="image for homepage">    
+                    <div class="text">
+                        <p class="para"><a class="template" href="#">Living Room. Click to Use this Template</a><br></p>
+                    </div>
                 </div>
+                <!-- <div id="templates"> -->
+                <div id="presentation-images">
+                        <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image4.jpg?raw=true" alt="image for page">
+                        <div class="text">
+                            <p class="para"><a class="template" href="#">Wood wall. Click to Use this Template</a><br></p>
+                        </div>
+                </div>
+                <!-- <div id="templates"> -->
+                <div id="presentation-images">
+                        <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image3.jpg?raw=true" alt="image for page">
+                        <div class="text">
+                            <p class="para"><a class="template" href="#">Wood table. Click to Use this Template</a><br></p>
+                        </div>
+                </div>
+                <p class="more"><a class="template" href="#">Click here for more templates </a><br></p>
             </div>
         </section>
-        <section id="templates">
-            <h2>TEMPLATES</h2>
-            <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image3.jpg?raw=true" alt="image for page">
-            <a class="template" href="#">Use Template</a><br>
-            <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image4.jpg?raw=true" alt="image for page">
-            <a class="template" href="#">Use Template</a><br>
-            <img src="https://github.com/charphilip/charphilip.github.io/blob/main/wwr/awesomewoods/images/image5.jpg?raw=true" alt="image for page3">
-            <a class="template" href="#">Use Template</a><br>
         </section>
-        <section>
-            <form action="/action_page.php">
-                <input type="file" id="myFile" name="filename">
-            </form>
-            <i class="fas fa-cut"></i>
-            <i class="fas fa-edit"></i>
-            <i class="fas fa-eraser"></i>
-            <i class="fas fa-pencil"></i>
-            <i class="fas fa-tools"></i>
-            <i class="fas fa-undo"></i>
-            <i class="fas fa-trash"></i>
+        <section class="owndesign">
+            <h2 style="text-align: left; color: #E7C24F;">CREATE YOUR OWN DESIGN</h2>
+            <div class="label">
+                <br>
+                <!-- actual upload which is hidden -->
+                <input type="file" id="actual-btn" hidden/>
+                <!-- our custom upload button -->
+                <label for="actual-btn">Choose File</label>
+                <!-- name of file chosen -->
+                <span id="file-chosen">No file chosen</span><br>
+            </div>
+            <div class="optiontools">
+                <i class="fas fa-cut"></i>
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-eraser"></i>
+                <i class="fas fa-pencil"></i>
+                <i class="fas fa-tools"></i>
+                <i class="fas fa-undo"></i>
+                <i class="fas fa-trash"></i>
+            </div>
             <div id="board">
-                <canvas id="myCanvas" width="500px" height="500px">
+                <canvas id="myCanvas" width="800px" height="500px">
                     Sorry, your browser doesn't support canvas technology.
                 </canvas>
-                <p>Color picker: <select id="selectColor">
+                <p style="text-align: left; color: #E7C24F;">Color picker: <select id="selectColor">
                 <option id="colBlack" value="black" selected="selected">Black</option>
                 <option id="colRed" value="red">Red</option>
                 <option id="colBlue" value="blue">Blue</option>
@@ -113,9 +126,10 @@
                     border: 3px dotted #000;    
                 }
             </style>
-            <button class="btn"><i class="fa fa-download"></i> Download</button>
-            <button class="btn"><i class="fas fa-share-square"></i>Save</button>
+            <button class="button"><i class="fa fa-download"></i> DOWNLOAD</button>
+            <button class="button"><i class="fas fa-share-square"></i>SHARE</button>
         </section>
+        <div class="feedbackgrid">
         <section id="feedback">
             <div id="feedback-box">
                 <h1>Feedback</h1>
@@ -142,6 +156,7 @@
                 <p>Call us to know more</p>
             </div>
         </section>
+        </div>
         <script>
             // get the feedback div element so we can do something with it.
             const feedbackElement = document.getElementById('feedback-box');

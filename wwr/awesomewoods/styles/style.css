@@ -102,18 +102,25 @@ main div iframe{
     height: 350px;
     border-radius: 10%;
 }
-body .images-home{
+.images-home{
+    grid-row: 3/4;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+#templates{
+    
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 300px 300px 300px ;
     justify-items: center;
     align-items: center;
-    margin: 20px;
-    gap: 80px;
+    margin: 0 auto;
+    gap: 20px;
 }
 #presentation-images{
     position: relative;
-    width: 80%;
-    padding-left: 80px;
+    /* width: 80%;
+    padding-left: 80px; */
+    /* grid-column: 1/2; */
 }
 #presentation-images img{
     display: block;
@@ -132,24 +139,32 @@ body .images-home{
     opacity: 0; 
     transition: .5s ease;
     background-color: #E7C24F;
+    border:3px dotted white
 }
 #presentation-images:hover .text{
     opacity: 1;
 }
 #presentation-images .para{
-    color: white;
-    font-size: 18px;
+    color: #3D1F00;
+    font-size: 23px;
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
+    
     /* -ms-transform: translate(-50%, -50%); */
+}
+.more{
+    grid-column: 1/-1;
+    text-align: right;
+    cursor: pointer;
 }
 
 #presentation-images2{
     position: relative;
-    width: 80%;
-    padding-right: 80px;
+        /* width: 80%;
+        padding-right: 80px; */
+    /* grid-column: 2/3; */
 }
 #presentation-images2 img{
     display: block;
@@ -379,7 +394,7 @@ footer h3{
 .mainprocess{
     display: grid;
     /* grid-template-columns: 600px 600px; */
-    grid-template-rows: 80px 200px 1fr 1fr;
+    grid-template-rows: 80px 200px 550px 1fr;
     gap: 20px;
     border: 20px;
     margin: 0 30px;
@@ -458,6 +473,11 @@ footer h3{
     font-family: 'Irish Grover';
     cursor: pointer;
   }
+.owndesign .button:hover{
+        background: white;
+        color: dimgray;
+        transition: 0.5s;
+}
 #login .form .button:hover {
     background: white;
     color: dimgray;
@@ -567,7 +587,10 @@ footer h3{
     color: dimgray;
     transition: 0.5s;
   }
-
+.feedbackgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 /* CSS for In Touch */
 #intouch, #feedback{
     color: white;
@@ -730,7 +753,7 @@ footer h3{
 }
 .content {
     position: absolute; 
-    top: 85%;
+    top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
     height: 160px;
@@ -795,7 +818,35 @@ footer h3{
 0%, 100% {opacity:0;}
 50% {opacity:1;}
 }
-
+.owndesign{
+    padding: 0 auto;
+    margin: 0 50px;
+    grid-row: 4/5;
+}
+.label{
+    padding: 0 auto;
+    margin: 15px auto;
+}
+label {
+    background-color: #E7C24F;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+#file-chosen{
+    margin-left: 0.3rem;
+    
+}
+.optiontools{
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px 70px 70px 70px;
+    text-align: center;
+    margin: 20px auto;
+    color: #E7C24F;
+}
 @-webkit-keyframes change {
 0%, 12.66%, 100% {transform:translate3d(0,0,0);}
 16.66%, 29.32% {transform:translate3d(0,-25%,0);}
